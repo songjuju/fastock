@@ -1,6 +1,10 @@
 from typing import Union
-
+from dotenv import load_dotenv
 from fastapi import FastAPI
+import os
+
+load_dotenv()
+key = os.getenv("FAKE_VALUE")
 
 app = FastAPI()
 
